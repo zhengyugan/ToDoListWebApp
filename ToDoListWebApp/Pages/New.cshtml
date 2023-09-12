@@ -1,0 +1,16 @@
+﻿@page
+@model ToDoListWebApp.Pages.NewModel
+
+<h1>New Task</h1>
+
+<form method="post">
+    <fieldset>
+        Task Name:
+        <input asp-for="ToDo.Task"/>
+        <span asp-validation-for="ToDo.Task"></span>
+        <br />
+        <input type="submit" />
+    </fieldset>
+</form>
+
+
